@@ -13,6 +13,11 @@ public class Bed {
         this.price=price;
     }
 
+    public Bed(double height, String sheetColor,double price){
+        this(height,1,sheetColor,price);
+
+    }
+
     public double getHeight() {
         return height;
     }
@@ -25,10 +30,6 @@ public class Bed {
         return sheetColor;
     }
 
-    public Bed(double height, String sheetColor,double price){
-            this(height,1,sheetColor,price);
-
-    }
 
     public void setSheetColor(String sheetColor) {
         this.sheetColor = sheetColor;
