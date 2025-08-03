@@ -4,7 +4,7 @@ public class Util {
         for (int i = 0; i < shirts.length; i++) {
             newShirts[i]=shirts[i];
         }
-        newShirts[shirts.length+1] = shirt;
+        newShirts[shirts.length] = shirt;
         return  newShirts;
     }
 }
