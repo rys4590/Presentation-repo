@@ -1,9 +1,10 @@
 public class Bed {
 
+    private static final double FIN_PRICE=100;
+    private double price;
     private double height;
     private int numPillows;
     private String sheetColor;
-    private double price;
 
 
     public Bed(double height, int numPillows, String sheetColor, double price){
@@ -13,8 +14,8 @@ public class Bed {
         this.price=price;
     }
 
-    public Bed(double height, String sheetColor,double price){
-        this(height,1,sheetColor,price);
+    public Bed(double height, String sheetColor){
+        this(height,1,sheetColor,FIN_PRICE);
 
     }
 
