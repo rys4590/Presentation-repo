@@ -16,10 +16,6 @@ public class Closet {
                 count++;
         }
         Shirt[] byRequest = new Shirt[count];
-        for (int i = 0; i < count; i++){
-            byRequest[i].setColor("");
-            byRequest[i].setSize(0);
-        }
         int j = 0;
         for (int i = 0; i < shirts.length; i++) {
             if(shirts[i].getSize()==size){
