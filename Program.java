@@ -20,4 +20,16 @@ public class Program {
     public static void func(int n){
         n=3;
     }
+
+    public static Classroom[] SortSchool(Classroom[] unsortedSchool){
+        int count7;
+        int count8;
+        int count9;
+        int count10;
+        int count11;
+        int count12;
+        for (int i = 0; i < ; i++) {
+
+        }
+    }
 }
