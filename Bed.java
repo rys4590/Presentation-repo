@@ -1,17 +1,17 @@
 public class Bed {
 
-    private double height;
+    final private double BED_HEIGHT;
     private int numPillows;
     private String sheetColor;
 
     public Bed(double height, int numPillows, String sheetColor){
         this.numPillows = numPillows;
-        this.height = height;
+        this.BED_HEIGHT = height;
         this.sheetColor = sheetColor;
     }
 
     public double getHeight() {
-        return height;
+        return BED_HEIGHT;
     }
 
     public int getNumPillows() {
