@@ -16,7 +16,7 @@ public class Program {
         Month[] arr = Month.values();
         int sum=0;
         int i = 0;
-        while(sum!=day){
+        while(sum>day){
             sum+=arr[i].getDays();
             i++;
         }
