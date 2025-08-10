@@ -5,6 +5,12 @@ public class Bobsponge extends Fish implements ProffesionalBasketballPlayer{
         walk();
     }
 
+    public Bobsponge() {
+        this.age = 13;
+        this.favoriteFood = "BURGER";
+        this.name="SPONGEBOB";
+    }
+
     @Override
     public void playBasketball() {
         System.out.println("PLAYIN WITH PATRICK");

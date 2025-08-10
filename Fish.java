@@ -1,7 +1,7 @@
 public abstract class Fish {
-    private int age;
-    private String favoriteFood;
-    private String name;
+    protected int age;
+    protected String favoriteFood;
+    protected String name;
 
     public Fish(){
     }

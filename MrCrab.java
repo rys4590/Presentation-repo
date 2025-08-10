@@ -4,4 +4,10 @@ public class MrCrab extends Fish{
         System.out.println("IM GONNA EARN MONEY!!!");
         takeTheCar();
     }
+
+    public MrCrab() {
+        this.age = 13;
+        this.favoriteFood = "MONAYYYY";
+        this.name="MRCRAB";
+    }
 }

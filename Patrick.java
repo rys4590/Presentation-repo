@@ -11,4 +11,10 @@ public class Patrick extends Fish implements ProffesionalBasketballPlayer{
     public void playBasketball() {
         System.out.println("I AM PLAYING BASKETBALL WITH SPONGEBOB");
     }
+
+    public Patrick() {
+        this.age = 13;
+        this.favoriteFood = "CRABBYPATTY";
+        this.name="PATRICK";
+    }
 }
