@@ -42,7 +42,6 @@ public abstract class Fish {
         System.out.println("I am taking the train!");
     }
 
-    public void goToWork(){
-    }
+    public abstract void goToWork();
 
 }
