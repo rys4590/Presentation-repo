@@ -52,7 +52,7 @@ public class Program {
             throw new AuthenticationException();
     }
 
-    public static void question5(int parameter){
+    public static void question6(int parameter){
         try {
             question4(parameter);
         }
@@ -65,6 +65,10 @@ public class Program {
         catch(AuthenticationException e){
             System.out.println(3);
         }
+        finally {
+            System.out.println("here");
+            throw new RuntimeException();
+        } //Question 6 is WORK IN PROGRESS, not done just yet
     }
     public static void main (String[]args){
 
