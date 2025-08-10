@@ -1,2 +1,48 @@
-public class Fish {
+public abstract class Fish {
+    private int age;
+    private String favoriteFood;
+    private String name;
+
+    public Fish(){
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getFavoriteFood() {
+        return favoriteFood;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public void setFavoriteFood(String favoriteFood) {
+        this.favoriteFood = favoriteFood;
+    }
+
+    public void takeTheCar(){
+        System.out.println("I am taking the car!");
+    }
+
+    public void walk(){
+        System.out.println("I am walking!");
+    }
+
+    public void takeTheTrain(){
+        System.out.println("I am taking the train!");
+    }
+
+    public void goToWork(){
+    }
+
 }
