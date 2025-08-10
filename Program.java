@@ -1,3 +1,6 @@
+import javax.naming.AuthenticationException;
+import java.io.FileNotFoundException;
+import java.net.BindException;
 import java.util.IllegalFormatException;
 import java.util.Scanner;
 public class Program {
@@ -40,7 +43,18 @@ public class Program {
         throw new IllegalArgumentException("you entered 45");
     }
 
+    public static void question4() throws FileNotFoundException, BindException, AuthenticationException{
+        System.out.println("enter num");
+        int integer = input.nextInt();
+        if(integer==1)
+            throw new FileNotFoundException("YO!");
+        if(integer==2)
+            throw new BindException();
+        if(integer==3)
+            throw new AuthenticationException();
+    }
+
     public static void main(String[] args){
-        question3();
+
     }
 }
