@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Program {
-    public static Scanner imput = new Scanner(System.in);
+    public static Scanner input = new Scanner(System.in);
     public static int previousDays(Month month, int day){
         Month[] arr = Month.values();
         int sum=0;
@@ -27,7 +27,12 @@ public class Program {
     public static int recipt(Groceries[] groceriesList, int[] amount){
         int sum=0;
         for (int i = 0; i < groceriesList.length; i++) {
-            sum+=groceriesList[i].getPrice()*amount[i];
+            if(groceriesList[i].name()!="Apple")
+                sum+=groceriesList[i].getPrice()*amount[i];
+            else{
+                int weight = input.nextInt();
+                sum+=groceriesList[i].getPrice()*weight;
+            }
         }
         return sum;
     }
