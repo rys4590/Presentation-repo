@@ -43,18 +43,30 @@ public class Program {
         throw new IllegalArgumentException("you entered 45");
     }
 
-    public static void question4() throws FileNotFoundException, BindException, AuthenticationException{
-        System.out.println("enter num");
-        int integer = input.nextInt();
-        if(integer==1)
+    public static void question4(int integer) throws FileNotFoundException, BindException, AuthenticationException {
+        if (integer == 1)
             throw new FileNotFoundException("YO!");
-        if(integer==2)
+        if (integer == 2)
             throw new BindException();
-        if(integer==3)
+        if (integer == 3)
             throw new AuthenticationException();
     }
 
-    public static void main(String[] args){
+    public static void question5(int parameter){
+        try {
+            question4(parameter);
+        }
+        catch(FileNotFoundException e){
+            System.out.println(1);
+        }
+        catch(BindException e){
+            System.out.println(2);
+        }
+        catch(AuthenticationException e){
+            System.out.println(3);
+        }
+    }
+    public static void main (String[]args){
 
     }
 }
