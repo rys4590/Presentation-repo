@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Program {
     public static Scanner input = new Scanner(System.in);
     public static void  error(){
-         new RuntimeException("my message A");
+        Exception runTime = new RuntimeException("my message A");
         Exception index = new  IndexOutOfBoundsException("my message B");
         System.out.println(index.getMessage());
         throw new RuntimeException();
