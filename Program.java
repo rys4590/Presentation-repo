@@ -28,11 +28,18 @@ public class Program {
          while (true) {
             System.out.println("enter num");
             num = input.nextInt();
-            if(num==45)
-                illegalEcx();
+            if(num==45) {
+                try {
+                    illegalEcx();
+                }
+                catch(IllegalArgumentException except){
+                    System.out.println(except);
+                }
+            }
             else if(num==100)
                 exeptionRuntime();
         }
+
     }
 
     public static void exeptionRuntime(){
