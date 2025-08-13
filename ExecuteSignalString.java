@@ -1,16 +1,16 @@
 public class ExecuteSignalString implements InformationSignal<String> {
-    private String[] values;
+    private String[] informationValues;
     private String[] allValues;
     private int numOfItems;
 
     public ExecuteSignalString(int size){
         allValues = new String[100];
-        values= new String[size];
+        informationValues = new String[size];
     }
 
     @Override
     public String getLastValue() {
-        return  values[values.length-1];
+        return  informationValues[informationValues.length-1];
     }
 
 
