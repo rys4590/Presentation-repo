@@ -4,8 +4,4 @@ public class Program {
             System.out.println(items.getList()[i] + ",");
         }
     }
-
-        public static void main(String[] args){
-
-        }
 }
