@@ -1,7 +1,7 @@
 public class ExecuteSignalBool implements InformationSignal<Boolean>{
     private Boolean[] values;
     private Boolean[] allValues;
-
+    private int numOfItems;
     public ExecuteSignalBool(int size){
         allValues = new Boolean[100];
         values= new Boolean[size];
@@ -15,12 +15,7 @@ public class ExecuteSignalBool implements InformationSignal<Boolean>{
 
     @Override
     public void update(Boolean toAdd) {
-        int count = 0;
-        for (int i = 0; i < allValues.length; i++) {
-            if(allValues[i]!=null)
-                count++;
-        }
-        if(allValues.length>count)
+        if(allValues.length>numOfItems)
             allValues[allValues.length-1] = toAdd;
         else{
             Object[] temp = new Object[allValues.length+1];

@@ -1,6 +1,7 @@
 public class ExecuteSignalInt implements InformationSignal<Integer> {
     private Integer[] values;
     private Integer[] allValues;
+    private int numOfItems;
 
     public ExecuteSignalInt(int size) {
         allValues = new Integer[100];
@@ -15,19 +16,14 @@ public class ExecuteSignalInt implements InformationSignal<Integer> {
 
     @Override
     public void update(Integer toAdd) {
-        int count = 0;
-        for (int i = 0; i < allValues.length; i++) {
-            if (allValues[i] != null)
-                count++;
-        }
-        if (allValues.length > count)
-            allValues[allValues.length - 1] = toAdd;
-        else {
-            Object[] temp = new Object[allValues.length + 1];
+        if(allValues.length>numOfItems)
+            allValues[allValues.length-1] = toAdd;
+        else{
+            Object[] temp = new Object[allValues.length+1];
             for (int i = 0; i < allValues.length; i++) {
-                temp[i] = allValues[i];
+                temp[i]=allValues[i];
             }
-            temp[temp.length - 1] = toAdd;
+            temp[temp.length-1] = toAdd;
         }
     }
 
