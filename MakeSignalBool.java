@@ -34,7 +34,7 @@ public class MakeSignalBool implements InformationSignal<Boolean>{
 
 
     @Override
-    public Object[] asArray() {
+    public Boolean[] asArray() {
         return allValues;
     }
 }

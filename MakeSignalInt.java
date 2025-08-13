@@ -35,7 +35,7 @@ public class MakeSignalInt implements InformationSignal<Integer> {
 
 
     @Override
-    public Object[] asArray() {
+    public Integer[] asArray() {
         return allValues;
     }
 }

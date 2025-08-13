@@ -34,7 +34,7 @@ public class MakeSignal implements InformationSignal<String> {
 
 
     @Override
-    public Object[] asArray() {
+    public String[] asArray() {
         return allValues;
     }
 }
