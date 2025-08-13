@@ -5,11 +5,11 @@ import java.util.IllegalFormatException;
 import java.util.Scanner;
 public class Program {
     public static Scanner input = new Scanner(System.in);
-    public static void  error(){
+    public static void  error() throws Exception {
         Exception runTime = new RuntimeException("my message A");
         Exception index = new  IndexOutOfBoundsException("my message B");
         System.out.println(index.getMessage());
-        throw new RuntimeException();
+        throw runTime;
     }
 
     public static void trying() {
