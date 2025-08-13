@@ -8,7 +8,7 @@ public class Program {
     public static void  error(){
          new RuntimeException("my message A");
         Exception index = new  IndexOutOfBoundsException("my message B");
-        index.getMessage();
+        System.out.println(index.getMessage());
         throw new RuntimeException();
     }
 
