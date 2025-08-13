@@ -16,7 +16,7 @@ public class ExecuteSignalInt implements InformationSignal<Integer> {
 
     @Override
     public void update(Integer toAdd) {
-        values.
+        allValues.add(toAdd);
     }
 
 
