@@ -1,4 +1,4 @@
-public class List <T>{
+public class List <T> {
    private Object[] list;
     private int numOfObjects;
    public List() {
