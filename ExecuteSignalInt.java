@@ -1,10 +1,8 @@
-import java.util.Objects;
-
-public class MakeSignalInt implements InformationSignal<Integer> {
+public class ExecuteSignalInt implements InformationSignal<Integer> {
     private Integer[] values;
     private Integer[] allValues;
 
-    public MakeSignalInt(int size) {
+    public ExecuteSignalInt(int size) {
         allValues = new Integer[100];
         values = new Integer[size];
     }

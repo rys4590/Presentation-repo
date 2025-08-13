@@ -1,9 +1,8 @@
-import java.util.Objects;
-public class MakeSignalBool implements InformationSignal<Boolean>{
+public class ExecuteSignalBool implements InformationSignal<Boolean>{
     private Boolean[] values;
     private Boolean[] allValues;
 
-    public MakeSignalBool(int size){
+    public ExecuteSignalBool(int size){
         allValues = new Boolean[100];
         values= new Boolean[size];
     }

@@ -1,9 +1,8 @@
-import java.util.Objects;
-public class MakeSignal implements InformationSignal<String> {
+public class ExecuteSignalString implements InformationSignal<String> {
     private String[] values;
     private String[] allValues;
 
-    public MakeSignal(int size){
+    public ExecuteSignalString(int size){
         allValues = new String[100];
         values= new String[size];
     }
