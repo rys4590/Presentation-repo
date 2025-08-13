@@ -25,7 +25,7 @@ public class Program {
 
     public static void question3(){
         int num;
-        for (int i = 0; i > -1; i++) {
+         while (true) {
             System.out.println("enter num");
             num = input.nextInt();
             if(num==45)
