@@ -27,4 +27,12 @@ public class List <T>{
    public void set(int spot, T smth){
        list[spot]=smth;
    }
+
+    public int getNumOfObjects() {
+        return numOfObjects;
+    }
+
+    public Object[] getList() {
+        return list;
+    }
 }
