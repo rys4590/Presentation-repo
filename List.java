@@ -35,4 +35,12 @@ public class List <T> {
     public Object[] getList() {
         return list;
     }
+
+    public void setList(Object[] list) {
+        this.list = list;
+    }
+
+    public void setNumOfObjects(int numOfObjects) {
+        this.numOfObjects = numOfObjects;
+    }
 }

@@ -1,10 +1,10 @@
 public class ExecuteSignalInt implements InformationSignal<Integer> {
     private Integer[] values;
-    private Integer[] allValues;
+    private List allValues;
     private int numOfItems;
 
     public ExecuteSignalInt(int size) {
-        allValues = new Integer[100];
+        allValues.setList(new Integer[100]);
         values = new Integer[size];
     }
 
@@ -16,15 +16,7 @@ public class ExecuteSignalInt implements InformationSignal<Integer> {
 
     @Override
     public void update(Integer toAdd) {
-        if(allValues.length>numOfItems)
-            allValues[allValues.length-1] = toAdd;
-        else{
-            Object[] temp = new Object[allValues.length+1];
-            for (int i = 0; i < allValues.length; i++) {
-                temp[i]=allValues[i];
-            }
-            temp[temp.length-1] = toAdd;
-        }
+        values.
     }
 
 
