@@ -1,5 +1,5 @@
-public class Bobsponge extends Fish implements ProffesionalBasketballPlayer{
-    public Bobsponge() {
+public class Spongebob extends Fish implements ProffesionalBasketballPlayer{
+    public Spongebob() {
         this.age = 13;
         this.favoriteFood = "BURGER";
         this.name="SPONGEBOB";

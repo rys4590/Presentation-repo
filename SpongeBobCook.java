@@ -1,4 +1,4 @@
-public class SpongeBobCook extends Bobsponge{
+public class SpongeBobCook extends Spongebob {
 
     public SpongeBobCook(){
         super();
