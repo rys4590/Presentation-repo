@@ -4,7 +4,7 @@ public class ExecuteSignalInt implements InformationSignal<Integer> {
     private int numOfItems;
 
     public ExecuteSignalInt(int size) {
-        allValues.setList(new Integer[100]);
+        allValues = new List<Integer>();
         values = new Integer[size];
     }
 
@@ -22,6 +22,6 @@ public class ExecuteSignalInt implements InformationSignal<Integer> {
 
     @Override
     public Integer[] asArray() {
-        return allValues;
+        return (Integer[]) allValues.getList();
     }
 }
