@@ -3,8 +3,6 @@ public abstract class Fish {
     protected String favoriteFood;
     protected String name;
 
-    public Fish(){
-    }
 
     public String getName() {
         return name;
