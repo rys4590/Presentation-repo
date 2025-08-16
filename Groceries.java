@@ -5,15 +5,15 @@ public enum Groceries {
     SUGAR("Sugar",7),
     APPLE("Apple",3);
 
-    private final String NAME;
-    private final int PRICE;
+    private final String name;
+    private final int price;
 
     Groceries(String NAME, int PRICE){
-        this.NAME= NAME;
-        this.PRICE=PRICE;
+        this.name = NAME;
+        this.price =PRICE;
     }
 
     public int getPrice() {
-        return PRICE;
+        return price;
     }
 }
