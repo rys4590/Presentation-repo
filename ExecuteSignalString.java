@@ -1,35 +1,25 @@
 public class ExecuteSignalString implements InformationSignal<String> {
-    private String[] informationValues;
-    private String[] allValues;
+    private List allValues;
     private int numOfItems;
 
-    public ExecuteSignalString(int size){
-        allValues = new String[100];
-        informationValues = new String[size];
+    public ExecuteSignalString(int size) {
+        allValues = new List<String>();
     }
 
     @Override
     public String getLastValue() {
-        return  informationValues[informationValues.length-1];
+        return (String) allValues.get(allValues.getNumOfObjects() - 1);
     }
 
 
     @Override
     public void update(String toAdd) {
-        if(allValues.length>numOfItems)
-            allValues[allValues.length-1] = toAdd;
-        else{
-            Object[] temp = new Object[allValues.length+1];
-            for (int i = 0; i < allValues.length; i++) {
-                temp[i]=allValues[i];
-            }
-            temp[temp.length-1] = toAdd;
-        }
+        allValues.add(toAdd);
     }
 
 
     @Override
     public String[] asArray() {
-        return allValues;
+        return (String[]) allValues.getList();
     }
 }

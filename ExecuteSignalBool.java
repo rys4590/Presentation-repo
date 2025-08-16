@@ -1,34 +1,25 @@
-public class ExecuteSignalBool implements InformationSignal<Boolean>{
-    private Boolean[] values;
-    private Boolean[] allValues;
+public class ExecuteSignalBool implements InformationSignal<Boolean> {
+    private List allValues;
     private int numOfItems;
-    public ExecuteSignalBool(int size){
-        allValues = new Boolean[100];
-        values= new Boolean[size];
+
+    public ExecuteSignalBool(int size) {
+        allValues = new List<Boolean>();
     }
 
     @Override
     public Boolean getLastValue() {
-        return  values[values.length-1];
+        return (Boolean) allValues.get(allValues.getNumOfObjects() - 1);
     }
 
 
     @Override
     public void update(Boolean toAdd) {
-        if(allValues.length>numOfItems)
-            allValues[allValues.length-1] = toAdd;
-        else{
-            Object[] temp = new Object[allValues.length+1];
-            for (int i = 0; i < allValues.length; i++) {
-                temp[i]=allValues[i];
-            }
-            temp[temp.length-1] = toAdd;
-        }
+        allValues.add(toAdd);
     }
 
 
     @Override
     public Boolean[] asArray() {
-        return allValues;
+        return (Boolean[]) allValues.getList();
     }
 }
