@@ -33,7 +33,7 @@ public class Program {
                     illegalEcx();
                 }
                 catch(IllegalArgumentException except){
-                    System.out.println(except);
+                    System.out.println(except.getMessage());
                 }
             }
             else if(num==100)
