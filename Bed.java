@@ -1,6 +1,6 @@
 public class Bed {
 
-    final private double BED_HEIGHT;
+    private final double BED_HEIGHT;
     private int numPillows;
     private String sheetColor;
 
