@@ -6,19 +6,16 @@ public class List <T> {
        this.numOfObjects=100;
    }
 
-   public void add(T smth){
-       if(list.length==numOfObjects){
-           Object[] lists2 = new Object[list.length+1];
-           lists2[list.length] = smth;
-           list = lists2;
-       }
-       else{
-           for (int i = 0; i < list.length; i++) {
-               if(list[i]==null)
-                   list[i]=smth;
-           }
-       }
-   }
+    public void add(T smth) {
+        if (numOfObjects == list.length) {
+            // grow array
+            Object[] lists2 = new Object[list.length + 1];
+            System.arraycopy(list, 0, lists2, 0, list.length);
+            list = lists2;
+        }
+        list[numOfObjects] = smth;
+        numOfObjects++;
+    }
 
    public T get(int spot){
        return (T) list[spot];
