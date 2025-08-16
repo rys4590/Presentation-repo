@@ -5,8 +5,8 @@ public class Program {
     public static int previousDays(Month month, int day){
         Month[] arr = Month.values();
         int sum=0;
-        for (int i = 1; i < month.returnNum() ; i++) {
-            sum+=arr[i-1].getDays();
+        for (int i = 0; i < month.returnNum()-1 ; i++) {
+            sum+=arr[i].getDays();
         }
         sum+=day;
         return sum;  //not sure about this one at all, but ill check at the end
