@@ -33,7 +33,9 @@ public class Program{
 
     public static void main(String[] args) {
         CharInString i = Program::isCharInString;
-        RaiseByLargeNum smth = Program::raiseByLargeNum;
+//        RaiseByLargeNum smth = Program::raiseByLargeNum;
+        ToDollar smth = ( amount) -> amount*0.3;
     }
+
 
 }
