@@ -17,14 +17,14 @@ public class TaskManager {
         }
     }
 
-    public void printFiltered(TaskFilter blep){
+    public void printFiltered(TaskFilter filter){
         for (int i = 0; i <tasks.length; i++) {
             if(blep.didFilter(tasks[i]))
                 System.out.println(tasks[i]);
         }
     }
 
-    public void deleteFiltered(TaskFilter blep){
+    public void deleteFiltered(TaskFilter filter){
         int count = 0;
         for (int i = 0; i < tasks.length; i++) {
             if(!blep.didFilter(tasks[i]))
@@ -41,7 +41,7 @@ public class TaskManager {
         tasks=temp;
     }
 
-    public void raiseFilter(TaskFilter blep){
+    public void raiseFilter(TaskFilter filter){
         for (int i = 0; i <tasks.length; i++) {
             if(blep.didFilter(tasks[i])){
                 int importance = tasks[i].getImportance();
@@ -50,7 +50,7 @@ public class TaskManager {
         }
     }
 
-    public void lowerFilter(TaskFilter blep){
+    public void lowerFilter(TaskFilter filter){
         for (int i = 0; i <tasks.length; i++) {
             if(blep.didFilter(tasks[i])){
                 int importance = tasks[i].getImportance();
