@@ -8,9 +8,9 @@ public enum Groceries {
     private final String name;
     private final int price;
 
-    Groceries(String NAME, int PRICE){
-        this.name = NAME;
-        this.price =PRICE;
+    Groceries(String name, int price){
+        this.name = name;
+        this.price =price;
     }
 
     public int getPrice() {
