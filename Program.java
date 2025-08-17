@@ -24,6 +24,7 @@ public class Program{
 
     public static void main(String[] args) {
         CharInString i = Program::isCharInString;
+        RaiseByLargeNum smth = Program::raiseByLargeNum;
     }
 
 }
