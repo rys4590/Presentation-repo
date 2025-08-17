@@ -3,6 +3,11 @@ public abstract class Fish {
     protected String favoriteFood;
     protected String name;
 
+    public Fish(int age, String favoriteFood, String name){
+        this.age=age;
+        this.favoriteFood=favoriteFood;
+        this.name=name;
+    }
 
     public String getName() {
         return name;
