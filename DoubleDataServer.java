@@ -13,7 +13,8 @@ public class DoubleDataServer {
 
 
     public void update() {
-        doubleTimedValue = new DoubleTimedValue(Math.random(), LocalTime.now().getSecond());
+        doubleTimedValue.setValue(Math.random());
+        doubleTimedValue.setTime(LocalTime.now().getSecond());
     }
 
 
