@@ -2,7 +2,7 @@ public class ExecuteSignalBool implements InformationSignal<Boolean> {
     private List allValues;
     private int numOfItems;
 
-    public ExecuteSignalBool(int size) {
+    public ExecuteSignalBool() {
         allValues = new List<Boolean>();
     }
 
