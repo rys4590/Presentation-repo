@@ -1,3 +1,4 @@
+import java.util.function.IntFunction;
 
 public class Program{
     public static boolean isCharInString(char ch,String text) {
@@ -20,6 +21,14 @@ public class Program{
             min = n2;
         }
         return (int) Math.pow(min, max);
+    }
+
+    public static int gettingInt(int smth){
+        return smth;
+    }
+
+    public static int returningInt(GetInt num, int n){
+        return num.gettingInt(n);
     }
 
     public static void main(String[] args) {
