@@ -3,6 +3,12 @@ public class Task {
     private boolean isComplete;
     private int importance;
 
+    public Task(String name, boolean isComplete, int importance){
+        this.name=name;
+        this.isComplete=isComplete;
+        this.importance=importance;
+    }
+
     public String getName() {
         return name;
     }

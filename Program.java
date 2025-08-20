@@ -31,10 +31,21 @@ public class Program{
         return num.gettingInt(n);
     }
 
+    public static boolean didFilter(Task t){
+        return (t.getImportance()>2);
+    }
+
     public static void main(String[] args) {
         CharInString i = Program::isCharInString;
 //        RaiseByLargeNum smth = Program::raiseByLargeNum;
-        ToDollar smth = ( amount) -> amount*0.3;
+        TaskFilter filt = Program::didFilter;
+        ToDollar smth = (amount) -> amount * 0.3;
+        Task taskA = new Task("A", false, 5);
+        Task taskB = new Task("B", false, 2);
+        Task[] tasks = {taskA, taskB};
+        TaskManager manager = new TaskManager(tasks);
+        manager.lowerFilter(filt);
+        System.out.println(manager.getTasks()[0].getImportance());
     }
 
 

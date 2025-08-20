@@ -3,6 +3,11 @@ public class TaskManager {
     private int size;
     private final int SPACE_NUM = 100;
 
+    public TaskManager(Task[] tasks){
+        size = 0;
+        this.tasks=tasks;
+    }
+
     public void addTask(Task task){
         if(size >tasks.length){
             Task[] temp = new Task[tasks.length+ SPACE_NUM];
@@ -61,4 +66,7 @@ public class TaskManager {
         }
     }
 
+    public Task[] getTasks() {
+        return tasks;
+    }
 }

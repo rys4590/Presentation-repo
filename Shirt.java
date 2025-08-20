@@ -2,7 +2,7 @@ public class Shirt {
     public int size;
     public String color;
 
-    public shirt(int size, String color){
+    public Shirt(int size, String color){
         this.size = size;
         this.color = color;
     }
