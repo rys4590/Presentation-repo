@@ -2,6 +2,11 @@ public class List <T> {
    private Object[] list;
     private int numOfObjects;
 
+    public List() {
+        this.list = new Object[100];
+        this.numOfObjects=100;
+    }
+
    public T get(int spot){
        return (T) list[spot];
    }
@@ -24,11 +29,6 @@ public class List <T> {
 
     public void setList(Object[] list) {
         this.list = list;
-    }
-
-    public List() {
-        this.list = new Object[100];
-        this.numOfObjects=100;
     }
 
     public void add(T smth) {
