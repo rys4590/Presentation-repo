@@ -52,7 +52,7 @@ public class TaskManager {
         for (int i = 0; i <tasks.length; i++) {
             if(filter.didFilter(tasks[i])){
                 int importance = tasks[i].getImportance();
-                tasks[i].setImportance(importance++);
+                tasks[i].setImportance(++importance);
             }
         }
     }
@@ -61,7 +61,7 @@ public class TaskManager {
         for (int i = 0; i <tasks.length; i++) {
             if(filter.didFilter(tasks[i])){
                 int importance = tasks[i].getImportance();
-                tasks[i].setImportance(importance--);
+                tasks[i].setImportance(--importance);
             }
         }
     }
