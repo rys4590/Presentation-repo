@@ -1,15 +1,15 @@
 public class TaskManager {
     private Task[] tasks;
     private int numOfAdd;
-    private final int spaceNum = 100;
+    private final int SPACE_NUM = 100;
 
     public void addTask(Task task){
         if(numOfAdd>tasks.length){
-            Task[] temp = new Task[tasks.length+spaceNum];
+            Task[] temp = new Task[tasks.length+ SPACE_NUM];
             for (int i = 0; i < tasks.length; i++) {
                 temp[i]=tasks[i];
             }
-            temp[spaceNum]=task;
+            temp[SPACE_NUM]=task;
             numOfAdd++;
             tasks = temp;
         }
