@@ -1,5 +1,5 @@
 public class ExecuteSignalGeneric <T> implements InformationSignal <T>  {
-    private List allValues;
+    private List<T> allValues;
     private int numOfItems;
 
     public ExecuteSignalGeneric(int size) {
@@ -8,7 +8,7 @@ public class ExecuteSignalGeneric <T> implements InformationSignal <T>  {
 
     @Override
     public T getLastValue() {
-        return (T) allValues.get(allValues.getNumOfObjects() - 1);
+        return allValues.get(allValues.getNumOfObjects() - 1);
     }
 
 
@@ -20,6 +20,6 @@ public class ExecuteSignalGeneric <T> implements InformationSignal <T>  {
 
     @Override
     public T[] asArray() {
-        return (T[]) allValues.getList();
+        return allValues.getList();
     }
 }
