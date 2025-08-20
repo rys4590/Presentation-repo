@@ -1,8 +1,6 @@
 public class Spongebob extends Fish implements ProffesionalBasketballPlayer{
     public Spongebob() {
-        this.age = 13;
-        this.favoriteFood = "BURGER";
-        this.name="SPONGEBOB";
+        super(13, "BURGER", "spongebob");
     }
 
     @Override

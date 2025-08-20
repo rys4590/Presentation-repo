@@ -2,9 +2,7 @@
 public class Patrick extends Fish implements ProffesionalBasketballPlayer{
 
     public Patrick() {
-        this.age = 13;
-        this.favoriteFood = "CRABBYPATTY";
-        this.name="PATRICK";
+        super(13, "CRABBY PATTY", "PATRICK");
     }
 
     @Override
