@@ -11,7 +11,6 @@ public class Task {
         return importance;
     }
 
-    @Override
     public String toString() {
         return super.toString();
     }
