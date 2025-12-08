@@ -17,7 +17,7 @@ public class Bed {
     public int getNumPillows() {
         return numPillows;
     }
-
+        //rgiofesjioefiojds
     public String getSheetColor() {
         return sheetColor;
     }
