@@ -1,4 +1,4 @@
-public class Bed {
+public class  Bed {
 
     private double height;
     private int numPillows;
